@@ -6,7 +6,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 2.0"
+      version = "~> 3.63"
 
     }
   }
@@ -63,7 +63,7 @@ resource "azurerm_resource_group" "vnet" {
 
 module "network" {
   source              = "Azure/network/azurerm"
-  version             = "3.1.1"
+  version             = "3.63.0"
   resource_group_name = azurerm_resource_group.vnet.name
   vnet_name           = local.name
   address_space       = "10.0.0.0/16"

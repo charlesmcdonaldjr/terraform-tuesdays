@@ -24,7 +24,7 @@ variable "ado_github_pat" {
 variable "prefix" {
   type        = string
   description = "Naming prefix for resources"
-  default     = "tacos"
+  default     = "ado"
 }
 
 variable "az_location" {
@@ -35,7 +35,7 @@ variable "az_location" {
 variable "az_container_name" {
   type        = string
   description = "Name of container on storage account for Terraform state"
-  default     = "terraform-state"
+  default     = "tfstorage_ado"
 }
 
 variable "az_state_key" {

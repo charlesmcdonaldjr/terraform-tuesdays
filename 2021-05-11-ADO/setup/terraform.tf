@@ -7,7 +7,7 @@ terraform {
 
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 2.0"
+      version = "~> 3.63"
 
     }
 
@@ -18,10 +18,10 @@ terraform {
 
   }
   backend "remote" {
-    organization = "ned-in-the-cloud"
+    organization = "charleswmcdonaldjr"
 
     workspaces {
-      name = "terraform-tuesday-ado-setup"
+      name = "ADO"
     }
   }
 }
